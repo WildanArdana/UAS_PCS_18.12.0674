@@ -1,9 +1,12 @@
 package com.wildan.pcs.ui.main.api
 
+import com.wildan.pcs.ui.main.data.model.DetailUserResponse
+import com.wildan.pcs.ui.main.data.model.User
 import retrofit2.Call
 import com.wildan.pcs.ui.main.data.model.UserResponse
 import retrofit2.http.GET
 import retrofit2.http.Headers
+import retrofit2.http.Path
 import retrofit2.http.Query
 
 interface Api {
@@ -12,4 +15,23 @@ interface Api {
     fun getSearchUsers(
         @Query("q") query: String
     ) : Call<UserResponse>
+
+    @GET("users/{username}")
+    @Headers("Authorization: token f9d4a2a2ad260da06a7b71b51e7c64b8d156ae77")
+    fun getUserDetail(
+        @Path("username") username : String
+    ): Call<DetailUserResponse>
+
+    @GET("users/username/followers")
+    @Headers("Authorization: token f9d4a2a2ad260da06a7b71b51e7c64b8d156ae77")
+    fun getFollowers(
+        @Path("username") username : String
+    ): Call<ArrayList<User>>
+
+    @GET("users/username/following")
+    @Headers("Authorization: token f9d4a2a2ad260da06a7b71b51e7c64b8d156ae77")
+    fun getFollowing(
+        @Path("username") username : String
+    ): Call<ArrayList<User>>
+
 }
