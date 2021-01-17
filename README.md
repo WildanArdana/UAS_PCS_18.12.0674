@@ -1,3 +1,3 @@
-# UAS PEMROGAMAN CLIENT SERVER
-Wildan Muhammad Ardana
-18.12.0674
+# TUGAS UAS_PEMROGAMAN CLIENT SERVER
+# Wildan Muhammad Ardana
+# 18.12.0674
