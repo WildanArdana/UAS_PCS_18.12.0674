@@ -1,3 +1,4 @@
 # TUGAS UAS_PEMROGAMAN CLIENT SERVER
-# Wildan Muhammad Ardana
-# 18.12.0674
+Wildan Muhammad Ardana
+18.12.0674
+SI02
